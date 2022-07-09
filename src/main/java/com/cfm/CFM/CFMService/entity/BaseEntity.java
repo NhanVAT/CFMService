@@ -25,17 +25,17 @@ public abstract class BaseEntity implements Serializable {
 
     @CreatedBy
     @Column(name = "createdby", nullable = false)
-    protected String createdby;
+    protected String createdBy;
 
     @CreatedDate
     @Column(name = "createddate", nullable = false)
-    protected Instant createddate = Instant.now();
+    protected Instant createdDate = Instant.now();
 
     @LastModifiedBy
     @Column(name = "updatedby")
-    protected String updatedby;
+    protected String updatedBy;
 
     @LastModifiedDate
     @Column(name = "updateddate")
-    protected Instant updateddate = Instant.now();
+    protected Instant updatedDate = Instant.now();
 }
